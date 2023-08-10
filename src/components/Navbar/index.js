@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import Logo from "./Logo";
+import Logo from "../Logo";
 import { Container } from "./styles";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
@@ -22,6 +22,9 @@ function Navbar() {
 		<Container>
 			<Logo 
 				navigate={navigate}
+				src="logo_green_wt-bg.png"
+				size={120}
+				mediaSize={100}
 			/>
 			<section
 				className="handle"

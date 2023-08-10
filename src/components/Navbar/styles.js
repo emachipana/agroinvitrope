@@ -60,23 +60,6 @@ export const Container = styled.div`
 		}
 	}
 `;
-
-export const LogoContainer = styled.section`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	overflow: hidden;
-`;
-
-export const Image = styled.img`
-	object-fit: cover;
-	max-width: 120px;
-
-	@media screen and (max-width: 770px) {
-		max-width: 100px;
-	}
-`;
                                            
 export const ItemContainer = styled.div`
 	displat: flex;

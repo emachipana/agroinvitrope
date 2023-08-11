@@ -23,8 +23,8 @@ function Navbar() {
 			<Logo 
 				navigate={navigate}
 				src="logo_green_wt-bg.png"
-				size={120}
-				mediaSize={100}
+				size={115}
+				mediaSize={95}
 			/>
 			<section
 				className="handle"

@@ -31,7 +31,7 @@ export const Section = styled.section`
     :
       ""
   }
-  gap: ${({ direction }) => direction === "column" ? 1 : 2}rem;
+  gap: ${({ direction }) => direction === "column" ? 0.5 : 2}rem;
 
   @media screen and (max-width: 950px) {
     width: 100%;
@@ -61,7 +61,7 @@ export const Title = styled.h2`
 
 export const Text = styled.p`
   text-align: start;
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 700;
   color: ${colors.gray.secondary};
 `;

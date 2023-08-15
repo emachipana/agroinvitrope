@@ -8,9 +8,7 @@ export const Section = styled.div`
   max-height: 86vh;
   overflow: hidden;
   margin-bottom: 4rem;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-
+  
   @media screen and (max-width: 700px) {
     width: 100%;
     height: 65vh;

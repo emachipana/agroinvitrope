@@ -4,7 +4,7 @@ import { colors, font } from "../styles";
 export const Line = styled.hr`
   margin: auto;
   width: 80%;
-  border: 1.5px solid ${colors.secondary};
+  border: 1.5px solid ${colors.primary};
 `;
 
 export const Container = styled.div`
@@ -69,10 +69,12 @@ export const Text = styled.p`
 export const Docs = styled.div`
   margin: auto;
   width: 90%;
+  min-height: 500px;
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 1rem;
+  gap: 2rem;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 `;

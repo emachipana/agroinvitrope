@@ -3,7 +3,7 @@ import { colors } from "../../styles";
 
 export const Container = styled.div`
 	width: 100%;
-	height: 110px;
+	height: 100px;
 	z-index: 5;
 	position: sticky;
 	top: 0;
@@ -30,6 +30,7 @@ export const Container = styled.div`
 	}
 
 	.icon {
+		color: ${colors.secondary};
 		font-size: 1.5rem;
 	}
 
@@ -41,7 +42,7 @@ export const Container = styled.div`
 			z-index: 5;
 			position: fixed;
 			left: -100%;
-			top: 110px;
+			top: 100px;
 			flex-direction: column;
 			gap: 12%;
 			width: 100%;
@@ -69,7 +70,7 @@ export const ItemContainer = styled.div`
 	padding: 1rem;
 	transition: .2s ease-in;
 	cursor: pointer;
-	color: ${({ active }) => active ? colors.primary : colors.gray.primary};
+	color: ${({ active }) => active ? colors.primary : colors.secondary};
 	
 	&:hover {
 		color: ${colors.primary};

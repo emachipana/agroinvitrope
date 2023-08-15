@@ -18,7 +18,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: ${({ direction }) => direction};
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `;
 
 export const Title = styled.h2`

@@ -1,5 +1,5 @@
-import DocCard from "../components/DocCard";
-import Slider from "../components/Slider";
+import DocCard from "../../components/DocCard";
+import Slider from "../../components/Slider";
 import { Container, Docs, Image, Line, Section, Text, Title } from "./styles";
 
 function HomePage() {

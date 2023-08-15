@@ -1,43 +1,33 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Section, Image } from "./styles";
-import { Autoplay } from "swiper/modules";
-import InfoCard from "../components/InfoCard";
-import "swiper/css";
+import Slider from "../components/Slider";
+import { Container, Image, Line, Section, Text, Title } from "./styles";
 
 function HomePage() {
   return (
     <>
-      <Section>
-        <InfoCard />
-        <Swiper
-          slidesPerView={1}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false
-          }}
-          modules={[Autoplay]}
-        >
-          <SwiperSlide>
-            <Image
-              alt="image"
-              src="assets/complete_2.jpg"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              alt="image"
-              src="assets/complete_4.jpg"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              alt="image"
-              src="assets/tubo_1.jpg"
-            />
-          </SwiperSlide>
-        </Swiper>
-      </Section>
+      <Slider />
+      <Line />
+      <Container>
+        <Section direction="row">
+          <Section direction="column">
+            <Title>Propuesta de valor</Title>
+            <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</Text>
+          </Section>
+          <Image 
+            src="assets/complete_1.jpg"
+            alt="photo"
+          />
+        </Section>
+        <Section direction="row">
+          <Image 
+            src="assets/complete_5.jpg"
+            alt="photo"
+          />
+          <Section direction="column">
+            <Title>La mejor calidad</Title>
+            <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</Text>
+          </Section>
+        </Section>
+      </Container>
     </>
   );
 }

@@ -1,13 +1,18 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Section, Image } from "./styles";
 import { Autoplay } from "swiper/modules";
-import InfoCard from "../InfoCard";
 import "swiper/css";
 
-function Slider() {
+function Slider({ images, height, maxHeight, width, Item, borderRadius, isBanner }) {
   return (
-    <Section>
-      <InfoCard />
+    <Section
+      isBanner={isBanner}
+      borderRadius={borderRadius}
+      height={height}
+      maxHeight={maxHeight}
+      width={width}
+    >
+      <Item />
       <Swiper
         slidesPerView={1}
         loop={true}
@@ -17,15 +22,16 @@ function Slider() {
         }}
         modules={[Autoplay]}
       >
-        <SwiperSlide>
-          <Image alt="image" src="assets/photo/complete_2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image alt="image" src="assets/photo/complete_4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image alt="image" src="assets/photo/tubo_1.jpg" />
-        </SwiperSlide>
+        {
+          images.map(image => (
+            <SwiperSlide>
+              <Image 
+                alt={image.alt}
+                src={`assets/photo/${image.src}`}
+              />
+            </SwiperSlide>
+          ))
+        }
       </Swiper>
     </Section>
   );

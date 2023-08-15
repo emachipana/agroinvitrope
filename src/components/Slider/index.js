@@ -18,13 +18,13 @@ function Slider() {
         modules={[Autoplay]}
       >
         <SwiperSlide>
-          <Image alt="image" src="assets/complete_2.jpg" />
+          <Image alt="image" src="assets/photo/complete_2.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt="image" src="assets/complete_4.jpg" />
+          <Image alt="image" src="assets/photo/complete_4.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image alt="image" src="assets/tubo_1.jpg" />
+          <Image alt="image" src="assets/photo/tubo_1.jpg" />
         </SwiperSlide>
       </Swiper>
     </Section>

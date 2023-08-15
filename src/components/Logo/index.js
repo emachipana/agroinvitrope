@@ -4,7 +4,7 @@ function Logo({ navigate, src, size, mediaSize }) {
 	return (
 		<Container onClick={() => navigate("/")} >
 			<Image 
-				src={`assets/${src}`}
+				src={`assets/logo/agroinvitrope/${src}`}
 				alt="logo"
 				size={size}
 				mediaSize={mediaSize}

@@ -4,7 +4,6 @@ import { colors, font } from "../styles";
 export const Line = styled.hr`
   margin: auto;
   width: 80%;
-  background-color: ${colors.secondary};
   border: 1.5px solid ${colors.secondary};
 `;
 
@@ -53,10 +52,11 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h2`
-  font-size: 2.5rem;
+  font-size: ${({ size }) => size ? size : "2.5rem"};
   font-family: ${font.secondary};
   color: ${colors.primary};
   font-weight: 900;
+  text-align: ${({ alignment }) => alignment ? alignment : "center"};
 `;
 
 export const Text = styled.p`
@@ -64,4 +64,15 @@ export const Text = styled.p`
   font-size: 1rem;
   font-weight: 700;
   color: ${colors.gray.secondary};
+`;
+
+export const Docs = styled.div`
+  margin: auto;
+  width: 90%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
 `;

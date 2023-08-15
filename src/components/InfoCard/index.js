@@ -14,7 +14,6 @@ function InfoCard() {
       <Button>
         <a
           rel="noreferrer"
-          style={{color: "white"}}
           target="_blank"
           href="https://api.whatsapp.com/send?phone=%2B51990849369&text=Hola%20estoy%20interesado%20en%20plantulas%20in%20vitro"
         >

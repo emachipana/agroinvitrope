@@ -11,7 +11,13 @@ function HomePage() {
         <Section direction="row">
           <Section direction="column">
             <Title alignment="start" >Propuesta de valor</Title>
-            <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</Text>
+            <Text>
+              Somos una empresa agrícola que se caracteriza
+              por destinar los mejores recursos para lograr
+              resultados óptimos en los proyectos y con ello
+              agregarle valor a éstos, con el fin de mantener
+              relaciones de largo plazo con sus clientes.
+            </Text>
           </Section>
           <Image 
             src="assets/photo/complete_1.jpg"
@@ -25,7 +31,15 @@ function HomePage() {
           />
           <Section direction="column">
             <Title alignment="start" >La mejor calidad</Title>
-            <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</Text>
+            <Text>
+              Disponemos de plantúlas in vitro de la mejor
+              calidad proveidas directamente por el Centro
+              Internacional de la Papa (CIP).
+              <br />
+              Esto se ve reflejado en nuestros clientes
+              quienes han obtenido las mejores experiencias
+              con nuestros productos.
+            </Text>
           </Section>
         </Section>
       </Container>

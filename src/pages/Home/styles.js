@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { colors, font } from "../styles";
+import { colors, font } from "../../styles";
 
 export const Line = styled.hr`
   margin: auto;

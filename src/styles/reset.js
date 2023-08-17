@@ -13,6 +13,7 @@ export const reset = css`
 
   a {
     text-decoration: none;
+    color: white;
   }
 
   ul {
@@ -23,5 +24,25 @@ export const reset = css`
     font-family: ${font.primary};
     color: ${colors.gray.primary};
     font-size: 1rem;
+  }
+
+  // reset scrollbar
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: ${colors.white};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 2rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, .6);
   }
 `;

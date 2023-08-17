@@ -1,11 +1,34 @@
-import DocCard from "../components/DocCard";
-import Slider from "../components/Slider";
+import DocCard from "../../components/DocCard";
+import InfoCard from "../../components/InfoCard";
+import Slider from "../../components/Slider";
 import { Container, Docs, Image, Line, Section, Text, Title } from "./styles";
 
 function HomePage() {
+  const imagesForSlider = [
+    {
+      src: "complete_2.jpg",
+      alt: "initial-photo"
+    },
+    {
+      src: "complete_4.jpg",
+      alt: "plantulas-photo"
+    },
+    {
+      src: "tubo_1.jpg",
+      alt: "tubos-photo"
+    }
+  ];
+
   return (
     <>
-      <Slider />
+      <Slider 
+        Item={InfoCard}
+        height={65}
+        maxHeight={86}
+        width={90}
+        maxWidth={100}
+        images={imagesForSlider}
+      />
       <Line />
       <Container>
         <Section direction="row">

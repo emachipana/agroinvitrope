@@ -1,8 +1,12 @@
 import { Container } from "./styles";
 
-function Button({ children }) {
+function Button({ children, alignment, fontSize, minFontSize }) {
   return (
-    <Container>
+    <Container
+      minFontSize={minFontSize}
+      fontSize={fontSize}
+      alignment={alignment}
+    >
       { children }
     </Container>
   )

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   cursor: pointer;
-  width: 280px;
+  width: 240px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ export const Image = styled.img`
 
 export const DocContainer = styled.div`
   width: 100%;
-  height: 380px;
+  height: 340px;
 `;
 
 export const SoonContainer = styled.div`

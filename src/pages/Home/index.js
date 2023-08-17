@@ -25,7 +25,8 @@ function HomePage() {
         Item={InfoCard}
         height={65}
         maxHeight={86}
-        width={100}
+        width={90}
+        maxWidth={100}
         images={imagesForSlider}
       />
       <Line />

@@ -10,7 +10,7 @@ function Banner() {
       </Text>
       <Button
         fontSize={1.2}
-        minFontSize={16}
+        minFontSize={18}
         alignment="center"
       >
         <a

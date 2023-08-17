@@ -3,7 +3,7 @@ import { Section, Image } from "./styles";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-function Slider({ images, height, maxHeight, width, Item, borderRadius, isBanner }) {
+function Slider({ images, height, maxHeight, width, maxWidth, Item, borderRadius, isBanner }) {
   return (
     <Section
       isBanner={isBanner}
@@ -11,6 +11,7 @@ function Slider({ images, height, maxHeight, width, Item, borderRadius, isBanner
       height={height}
       maxHeight={maxHeight}
       width={width}
+      maxWidth={maxWidth}
     >
       <Item />
       <Swiper
@@ -23,8 +24,10 @@ function Slider({ images, height, maxHeight, width, Item, borderRadius, isBanner
         modules={[Autoplay]}
       >
         {
-          images.map(image => (
-            <SwiperSlide>
+          images.map((image, index) => (
+            <SwiperSlide
+              key={index}
+            >
               <Image 
                 alt={image.alt}
                 src={`assets/photo/${image.src}`}

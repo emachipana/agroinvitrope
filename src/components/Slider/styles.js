@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const Section = styled.div`
   position: relative;
   display: flex;
-  width: ${({ isBanner, width }) => isBanner ? width : 90}%;
+  width: ${({ width }) => width}%;
   margin: ${({ isBanner }) => isBanner ? "2rem auto" : "auto"};
   max-height: ${({ maxHeight }) => maxHeight}vh;
   overflow: hidden;
@@ -11,7 +11,7 @@ export const Section = styled.div`
   border-radius: ${({ borderRadius }) => borderRadius ? borderRadius : 0}rem;
 
   @media screen and (max-width: 700px) {
-    width: ${({ width }) => width}%;
+    width: ${({ maxWidth }) => maxWidth}%;
     height: ${({ height }) => height}vh;
   }
 `;

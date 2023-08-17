@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import { colors } from "../../styles";
 
-export const Container = styled.div`
+export const Container = styled.button`
+  border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.8rem;
   background-color: ${colors.primary};

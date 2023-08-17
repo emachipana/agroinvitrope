@@ -6,6 +6,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 1rem;
   margin: auto;
   padding: 1rem;
   position: absolute;
@@ -24,15 +25,15 @@ export const Text = styled.h3`
   font-family: ${font.secondary};
   color: rgb(255, 255, 255);
   text-align: center;
-  max-width: 40vw;
+  width: 40vw;
 
   @media screen and (max-width: 700px) {
-    font-size: 2rem;
+    font-size: 2.2rem;
     width: 100%;
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 100%;
   }
 `;

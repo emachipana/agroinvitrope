@@ -17,7 +17,19 @@ export const reset = css`
   }
 
   ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    gap: 4px;
+  }
+
+  li::before {
+    content: "\\2022";
+    color: ${colors.secondary};
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
   }
 
   body {

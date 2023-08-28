@@ -34,7 +34,7 @@ export const Container = styled.div`
 		font-size: 1.5rem;
 	}
 
-	@media screen and (max-width: 770px) {
+	@media screen and (max-width: 930px) {
 		padding: 1rem 2rem;
 
 		.nav {
@@ -44,7 +44,7 @@ export const Container = styled.div`
 			left: -100%;
 			top: 100px;
 			flex-direction: column;
-			gap: 12%;
+			gap: 8%;
 			width: 100%;
 			height: 100vh;
 			padding: 1rem;

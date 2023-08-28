@@ -9,7 +9,6 @@ import {
   AiFillFacebook,
   AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { PiCopyrightFill } from "react-icons/pi";
 
 function Footer() {
   const navigate = useNavigate();
@@ -114,17 +113,6 @@ function Footer() {
               Whatsapp
             </Text>
           </Section>
-        </Section>
-        <hr 
-          style={{backgroundColor: "white", width: "100%"}}
-        />
-        <Section>
-          <Text>
-            <PiCopyrightFill 
-              size={18}
-            />
-            Copyright 2023
-          </Text>
         </Section>
       </Section>
     </Container>

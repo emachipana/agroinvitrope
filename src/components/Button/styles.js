@@ -3,7 +3,7 @@ import { colors } from "../../styles";
 
 export const Container = styled.button`
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 0.8rem;
   background-color: ${colors.primary};
   color: white;

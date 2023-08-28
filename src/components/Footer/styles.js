@@ -4,7 +4,7 @@ import { colors } from "../../styles";
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   align-items: center;
   background-color: ${colors.secondary};
   color: #F5F5F5;

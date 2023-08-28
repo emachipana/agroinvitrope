@@ -58,9 +58,9 @@ function Navbar() {
 				<NavItem
 					location={location.pathname}
 					navigate={handleOpen}
-					to="/nosotros"
+					to="/servicios"
 				>
-					Nosotros
+					Servicios
 				</NavItem>
 				<NavItem
 					location={location.pathname}
@@ -68,6 +68,13 @@ function Navbar() {
 					to="/Contacto"
 				>
 					Contacto
+				</NavItem>
+				<NavItem
+					location={location.pathname}
+					navigate={handleOpen}
+					to="/nosotros"
+				>
+					Nosotros
 				</NavItem>
 			</nav>
 		</Container>

@@ -65,7 +65,7 @@ function Navbar() {
 				<NavItem
 					location={location.pathname}
 					navigate={handleOpen}
-					to="/Contacto"
+					to="/contacto"
 				>
 					Contacto
 				</NavItem>

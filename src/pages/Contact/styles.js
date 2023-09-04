@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 2rem;
-  gap: 2rem;
+  gap: ${({ gap }) => gap || 2}rem;
   margin-bottom: 3rem;
 
   @media screen and (max-width: 1220px) {
@@ -97,4 +97,8 @@ export const Social = styled.div`
   align-items: start;
   justify-content: center;
   gap: 2rem;
+
+  @media screen and (max-width: 920px) {
+    align-items: center;
+  }
 `;

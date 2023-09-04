@@ -10,6 +10,10 @@ export const Container = styled.div`
   justify-content: center;
   gap: 5rem;
   padding: 1rem;
+
+  @media screen and (max-width: 700px) {
+    width: 95%;
+  }
 `;
 
 export const Section = styled.section`

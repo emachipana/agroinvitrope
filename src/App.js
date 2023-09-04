@@ -6,18 +6,20 @@ import HomePage from "./pages/Home";
 import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
 import AboutPage from "./pages/About";
+import WhatsappButton from "./components/WspButton";
 
 function App() {
   return (
     <>
+      <WhatsappButton />
       <Navbar />
-        <Routes>
-          <Route index path="/" element={<HomePage />} />
-          <Route path="/productos" element={<ProductsPage />} />
-          <Route path="/servicios" element={<ServicesPage />} />
-          <Route path="/contacto" element={<ContactPage />} />
-          <Route path="/nosotros" element={<AboutPage />} />
-        </Routes>
+      <Routes>
+        <Route index path="/" element={<HomePage />} />
+        <Route path="/productos" element={<ProductsPage />} />
+        <Route path="/servicios" element={<ServicesPage />} />
+        <Route path="/contacto" element={<ContactPage />} />
+        <Route path="/nosotros" element={<AboutPage />} />
+      </Routes>
       <Footer />
     </>
   );

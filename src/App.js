@@ -16,8 +16,12 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 2000);
   }, [isLoading]);
+
+  window.addEventListener("load", () => {
+    setIsLoading(false);
+  });
 
   return (
     <>

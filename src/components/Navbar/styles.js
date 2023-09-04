@@ -70,9 +70,9 @@ export const ItemContainer = styled.div`
 	padding: 1rem;
 	transition: .2s ease-in;
 	cursor: pointer;
-	color: ${({ active }) => active ? colors.primary : colors.secondary};
+	color: ${({ active }) => active ? colors.green : colors.secondary};
 	
 	&:hover {
-		color: ${colors.primary};
+		color: ${colors.green};
 	}
 `;

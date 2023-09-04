@@ -9,7 +9,7 @@ export const Line = styled.hr`
 
 export const Container = styled.div`
   margin: auto;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-  width: 75%;
+  width: 80%;
   padding: 1.5rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +27,7 @@ export const Section = styled.section`
   flex-direction: ${({ direction }) => direction};
   ${({ direction }) => direction === "column"
     ?
-      "width: 20vw;"
+      "width: 30vw;"
     :
       ""
   }

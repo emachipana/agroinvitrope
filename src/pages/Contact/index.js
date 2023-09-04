@@ -52,6 +52,7 @@ function ContactPage() {
       <Container
         width={100}
         content="center"
+        gap={6}
       >
         <Section>
           <Title>Déjanos tus datos</Title>

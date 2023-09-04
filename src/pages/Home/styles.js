@@ -2,9 +2,8 @@ import styled from "@emotion/styled";
 import { colors, font } from "../../styles";
 
 export const Line = styled.hr`
-  margin: auto;
+  margin: 2rem auto;
   width: 80%;
-  border: 1.5px solid ${colors.primary};
 `;
 
 export const Container = styled.div`

@@ -5,7 +5,7 @@ function validate(values) {
 
   if(!values.email) {
     errors.email = "Este campo es obligatorio";
-  }else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+  }else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email.trim())) {
     errors.email = "Este formato es incorrecto";
   }
 

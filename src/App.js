@@ -7,17 +7,11 @@ import ServicesPage from "./pages/Services";
 import ContactPage from "./pages/Contact";
 import AboutPage from "./pages/About";
 import WhatsappButton from "./components/WspButton";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Loader from "./components/Loader";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, [isLoading]);
 
   window.addEventListener("load", () => {
     setIsLoading(false);
@@ -26,7 +20,7 @@ function App() {
   return (
     <>
       { !isLoading || <Loader /> }
-      <WhatsappButton />
+      { isLoading || <WhatsappButton /> }
       <Navbar 
         setIsLoading={setIsLoading}
       />

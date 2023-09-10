@@ -17,6 +17,11 @@ function Navbar({ setIsLoading }) {
 		setIsLoading(true);
 		navigate(to);
 		window.scrollTo(0, 0);
+
+		setTimeout(() => {
+			setIsLoading(false);
+		}, 1500);
+
 		if(!isOpen) return;
 		setIsOpen(!isOpen);
 	}

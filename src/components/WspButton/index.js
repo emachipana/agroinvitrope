@@ -9,11 +9,11 @@ function WhatsappButton() {
   useEffect(() => {
     setTimeout(() => {
       setIsOpen(true);
-    }, 4000);
+    }, 2000);
 
     setTimeout(() => {
       setIsOpen(false);
-    }, 7000)
+    }, 5000)
   }, []);
 
   const toggle = () => setIsOpen(!isOpen);

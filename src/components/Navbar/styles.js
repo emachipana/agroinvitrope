@@ -67,12 +67,20 @@ export const ItemContainer = styled.div`
 	align-items: center;
 	font-size: 18px;
 	font-weight: 700;
-	padding: 1rem;
+	padding: 0.35rem 0.9rem;
 	transition: .2s ease-in;
+	border-radius: 0.8rem;
 	cursor: pointer;
-	color: ${({ active }) => active ? colors.green : colors.secondary};
+	color: ${({ active }) => active 
+		?
+			`
+				white;
+				background-color: ${colors.primary};
+			`
+		: colors.secondary};
 	
 	&:hover {
-		color: ${colors.green};
+		color: white;
+		background-color: ${colors.primary};
 	}
 `;

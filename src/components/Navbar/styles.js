@@ -41,7 +41,7 @@ export const Container = styled.div`
 			transition: .3s ease-in;
 			position: fixed;
 			left: -100%;
-			top: 14vh;
+			top: 100px;
 			flex-direction: column;
 			justify-content: space-around;
 			width: 100%;

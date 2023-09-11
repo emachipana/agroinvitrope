@@ -13,6 +13,12 @@ import Loader from "./components/Loader";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
+  if(navigator.userAgentData.mobile) {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 3000);
+  }
+
   window.addEventListener("load", () => {
     setIsLoading(false);
   });

@@ -4,7 +4,7 @@ import { colors } from "../../styles";
 export const Container = styled.div`
 	width: 100%;
 	height: 100px;
-	z-index: 5;
+	z-index: 15;
 	position: sticky;
 	top: 0;
 	padding: 1rem 3rem;
@@ -39,15 +39,14 @@ export const Container = styled.div`
 
 		.nav {
 			transition: .3s ease-in;
-			z-index: 5;
 			position: fixed;
 			left: -100%;
-			top: 100px;
+			top: 14vh;
 			flex-direction: column;
-			gap: 8%;
+			justify-content: space-around;
 			width: 100%;
-			height: 100vh;
-			padding: 1rem;
+			height: 87vh;
+			padding: 2rem 1rem;
 			background-color: white;
 			opacity: .98;
 		}

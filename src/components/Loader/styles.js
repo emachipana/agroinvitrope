@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   background-color: white;
-  z-index: 11;
+  z-index: 20;
   position: fixed;
   top: 0;
   bottom: 0;

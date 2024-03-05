@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { HiMenuAlt3 } from "react-icons/hi";
 import NavItem from "./NavItem";
 
-function Navbar({ setIsLoading }) {
+function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 	const navigate = useNavigate();
 	const location = useLocation();
@@ -14,13 +14,8 @@ function Navbar({ setIsLoading }) {
 	const handleOpen = (to) => {
 		if(to === location.pathname) return;
 
-		setIsLoading(true);
 		navigate(to);
 		window.scrollTo(0, 0);
-
-		setTimeout(() => {
-			setIsLoading(false);
-		}, 1500);
 
 		if(!isOpen) return;
 		setIsOpen(!isOpen);

@@ -15,6 +15,7 @@ function Slider({ images, height, maxHeight, width, maxWidth, Item, borderRadius
     >
       <Item />
       <Swiper
+        style={{width: "100%"}}
         slidesPerView={1}
         loop={true}
         autoplay={{

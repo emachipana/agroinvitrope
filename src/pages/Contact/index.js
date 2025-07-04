@@ -27,7 +27,6 @@ function ContactPage() {
           <DetailContainer>
             <DetailText>+51 990 849 369</DetailText>
             <DetailText>+51 962 846 733</DetailText>
-            <DetailText>+51 958 459 693</DetailText>
           </DetailContainer>
         </InfoContainer>
         <InfoContainer>
@@ -45,7 +44,7 @@ function ContactPage() {
             <InfoTitle>Dirección</InfoTitle>
           </InfoTitleContainer>
           <DetailContainer>
-            <DetailText>Jr. San Bernardo N° 224, Sapallanga - Huancayo</DetailText>
+            <DetailText>Sapallanga - Huancayo</DetailText>
           </DetailContainer>
         </InfoContainer>
       </Container>

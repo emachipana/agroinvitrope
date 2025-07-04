@@ -73,12 +73,6 @@ function Footer() {
               />
               +51 962846733
               </Text>
-            <Text>
-              <AiFillPhone 
-                size={17}
-              />
-              +51 958459693
-            </Text>
           </Section>
           <Section direction="column">
             <Title>Redes</Title>
